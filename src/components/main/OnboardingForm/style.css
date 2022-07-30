@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+/*Background color*/
+#grad1 {
+    /* background-color:  #e8ecf3; */
+}
+
+/*form styles*/
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+#msform fieldset .form-card {
+    background: white;
+    border: 0 none;
+    border-radius: 0px;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+    padding: 20px 40px 30px 40px;
+    box-sizing: border-box;
+    width: 94%;
+    margin: 0 3% 20px 3%;
+
+    /*stacking fieldsets above each other*/
+    position: relative;
+}
+
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+
+    /*stacking fieldsets above each other*/
+    position: relative;
+}
+
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+    /* display: none; */
+}
+
+#msform fieldset .form-card {
+    text-align: left;
+    color: #9E9E9E;
+}
+
+
+
+
+
+#msform .action-button:hover, #msform .action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px skyblue;
+}
+
+/*Previous Buttons*/
+#msform .action-button-previous {
+    width: 100px;
+    background: #616161;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+
+#msform .action-button-previous:hover, #msform .action-button-previous:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #616161;
+}
+
+/*Dropdown List Exp Date*/
+select.list-dt {
+    border: none;
+    outline: 0;
+    border-bottom: 1px solid #ccc;
+    padding: 2px 5px 3px 5px;
+    margin: 2px;
+}
+
+select.list-dt:focus {
+    border-bottom: 2px solid skyblue;
+}
+.alignLeft{
+    text-align: left !important;
+}
+
+/*The background card*/
+.card {
+    z-index: 0;
+    border: none;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+/*FieldSet headings*/
+.fs-title {
+    font-size: 25px;
+    color: #2C3E50;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/*progressbar*/
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey;
+}
+
+#progressbar .active {
+    color: #000000;
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 12px;
+    width: 25%;
+    float: left;
+    position: relative;
+}
+
+/*Icons in the ProgressBar*/
+#progressbar #account:before {
+    font-family: inherit;
+    content: "1";
+}
+
+#progressbar #personal:before {
+    font-family: inherit;
+    content: "2";
+}
+
+#progressbar #payment:before {
+    font-family: inherit;
+    content: "3";
+}
+
+#progressbar #confirm:before {
+    font-family: inherit;
+    content: "4";
+}
+
+.logo{
+    height: 34px;
+    margin-top: -3px;
+}
+ul{
+    padding-left: 0px !important;
+}
+
+.form1{
+    font-family: inherit;
+    padding: 0px 162px;
+}
+.form2{
+    padding: 0px 109px;
+}
+
+.form-control{
+    border-radius: 4px !important;
+    /* color: #a3adc2 !important; */
+}
+
+.mainContent1{
+    color: #323232;
+    font-family: inherit;
+}
+
+.mainContent2{
+    padding: 0px 54px;
+}
+
+.mainContent3{
+    padding: 2px;
+}
+
+.hover{
+    cursor: pointer;
+}
+.hover:hover{
+    border: 1px solid #664de5;
+}
+
+.addBorder{
+    border: 2px solid #664de5;
+}
+
+::placeholder { 
+    color: #e9e9e9;
+
+  }
+
+@media only screen and (max-width: 600px) and (min-width: 300px)  {
+   .form1{
+    padding: 0px 23px;
+   }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 300px)  {
+    .form2{
+     padding: 0px 11px;
+    }
+    .mainContent2{
+        padding: 0px 11px;
+    }
+ }
+
+.smallHeading1{
+color:#a3acbb !important;
+}
+
+
+
+/*ProgressBar before any progress*/
+#progressbar li:before {
+    width: 38px;
+    height: 38px;
+    line-height: 33px;
+    display: block;
+    font-size: 12px;
+    color: #919aa9;
+    background: white;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px;
+    border: 1px solid #d3d3d3;
+}
+
+/*ProgressBar connectors*/
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 19px;
+    z-index: -1;
+}
+#progressbar #confirm:after {
+    content: '';
+    width: 50%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 19px;
+    z-index: -1;
+}
+#progressbar #account:after {
+    content: '';
+    width: 50%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 19px;
+    z-index: -1;
+    margin-left: 50%;
+}
+
+/*Color number of the step and the connector before it*/
+#progressbar li.active:before, #progressbar li.active:after {
+    background: #664de5 !important;
+    color: white;
+}
+
+
+/*Imaged Radio Buttons*/
+.radio-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.radio {
+    display:inline-block;
+    width: 204;
+    height: 104;
+    border-radius: 0;
+    background: lightblue;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    cursor:pointer;
+    margin: 8px 2px; 
+}
+
+.radio:hover {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.radio.selected {
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+/*Fit image in bootstrap div*/
+.fit-image{
+    width: 100%;
+    object-fit: cover;
+}
+
+fieldset {
+	animation: fadeInAnimation ease 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
